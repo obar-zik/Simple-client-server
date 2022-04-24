@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inbar Client - Server</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <h2>
+    Get All users
+  </h2>
+
+  <form action="/api/users" method="get">
+    <input type="submit" value="Get Users">
+  </form>
+
+  <hr />
+
+  <h2>
+    Get user by id
+  </h2>
+
+  <form action="/api/user" method="get">
+    <input type="number" name="id" placeholder="Name">
+    <input type="submit" value="Get User">
+  </form>
+
+  <hr />
+
+  <h2>
+    Create user
+  </h2>
+
+  <form action="/api/user" method="post">
+    <input type="email" name="email" placeholder="Email">
+    <input type="text" name="name" placeholder="Name">
+    <input type="submit" value="Create User">
+  </form>
+
+  <hr />
+
+  <h2>
+    Update user
+  </h2>
+
+  <form>
+    <input type="number" name="id" placeholder="ID">
+    <input type="text" name="email" placeholder="Email">
+    <input type="text" name="name" placeholder="Name">
+    <input type="submit" value="Update User">
+  </form>
+
+  <hr />
+
+  <h2>
+    Delete user
+  </h2>
+
+  <form>
+    <input type="number" name="id" placeholder="ID">
+    <input type="submit" value="Delete User">
+  </form>
+
+</body>
+<script src="./source.js"></script>
+
+</html>
